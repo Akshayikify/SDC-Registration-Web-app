@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Poppins,sans-serif;
+}
+#headings{
+    text-align: center;
+    color: rgb(102, 67, 163);
+}
+.navbar{
+    background-color: rgb(90, 66, 245);
+    position: sticky;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+.navbar .nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 50px;
+    width: 100%;
+}
+.navbar .nav-items{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style-type: none;
+    align-items: center;
+}
+.navbar a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.navbar .nav-items li:hover{
+    font-weight: 800;
+    transition: ease-in-out 0.3s;
+    background-color: aqua;
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+}
+.navbar .logo{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-weight: 600;
+}
+.navbar .logo img{
+    clip-path: circle();
+}
+.nav-toggle{
+    display: none;
+    background: transparent;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: #ffffff;
+}
+.registration-container{
+    width: 80vw;
+    height: 80vh;
+    background-image: url(images/Custom-Software-Development.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.5);
+    text-align: center;
+    border-radius: 20px;
+}
+#registration-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#registrationform button{
+  background-color: rgb(66, 158, 245);
+  padding: 10px 20px;
+  color: #ffffff;
+  border: none;
+  width: fit-content;
+  align-self: center; 
+  border-radius: 8px;
+  cursor: pointer;
+}
+#registrationform{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+}
+.btncontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+.timeline h3{
+    text-align: center;
+}
+.timeline span{
+    display: flex;
+    justify-content: center;
+}
+.ftr{
+    background-color: rgb(10, 8, 8);
+    color: #ffffff;
+}
+.ftr .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ftr .container li{
+    list-style-type: none;
+}
+.ftr .container .firstblock li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.ftr .container .lastblock li:hover{
+    cursor: pointer;
+}
+.ftr .lastblock ul {
+    display: flex;
+    gap: 5px;
+}
+.ftr .copyright{
+    height: 50px;
+    text-align: center;
+}
+@media (max-width: 360px){
+    .navbar{
+        backdrop-filter: none;
+    }
+    .navbar  .nav-items{ 
+           padding: 5px 4px;
+           width: 100%;
+           gap: 5px;
+    }
+}
